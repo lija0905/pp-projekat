@@ -1,0 +1,44 @@
+program Program 
+
+int x;
+int y; int z;
+int niz[];
+char cr[];
+bool bl[];
+
+int i;
+
+{
+
+	int func(int a, int b[], char l, int c) {
+	
+		
+		return 1;
+	}
+
+	int main() {
+		
+		niz = new int[3];
+		
+		niz[0] = 1;
+		i = 0;
+				
+		if (niz[0] == 1) {
+		
+			do {
+			 i++;
+				do {
+				
+					i++;
+					print(i);
+				} while (i < 3);
+				
+				i++;
+				print(i);
+			} while(i < 5);
+		}
+	
+		return 1;
+	}
+
+}

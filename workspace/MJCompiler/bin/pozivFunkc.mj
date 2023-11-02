@@ -1,0 +1,39 @@
+program Program 
+
+int x; int a;
+int array[];
+
+{
+
+		int funkc() { x = 2; return x; }
+		int funkcPars(int y, int z) {  return y + z; }
+		int arrayFunkc(int niz[]) { niz[0] = 10;  niz = array; print(niz[1]); return 6; }
+		void funkcVoid() { array[1] = 11; return; }
+
+	
+	int main() {
+	
+		array = new int[2];
+		array[0] = 6;
+	
+		print(funkcPars(1, array[0]));
+		
+		a = funkcPars(funkc(), 1);
+		
+		print(a);
+		
+		array[0] = 1;
+		array[1] = 2;
+		
+		array[0] = arrayFunkc(array);
+		
+		print(array[0]);
+		
+		funkcVoid();
+		
+		print(array[1]);
+		return 1;
+	
+	}
+
+}

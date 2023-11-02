@@ -1,0 +1,42 @@
+program Program
+int x; 
+
+record Rek {
+	int a; int c;
+	int array[];
+}
+
+Rek rec;
+Rek arrayRecord[];
+
+{
+
+	int sum(int s, int k) { return s + k; }
+
+	int main() {
+	 	
+		rec = new Rek;
+		
+		rec.array = new int[4];
+		arrayRecord = new Rek[3];
+		arrayRecord[0] = new Rek;
+		arrayRecord[0].array = new int[2];
+			
+		rec.array[0] = 2;
+		rec.array[1] = 1;
+		rec.a = sum(rec.array[0], rec.array[1]);
+		x = rec.a;
+		
+		print(rec.a);
+
+		arrayRecord[0].array[0] = 2;
+		print(arrayRecord[0].array[0]);
+		
+		rec.array[2] = 3;
+		
+		rec.array[3]++;
+		print(rec.array[3]);		
+		return 1;
+	}
+
+}

@@ -1,0 +1,42 @@
+program Program
+
+int x; 
+char b;
+int niz[];
+int g[];
+
+{
+	int fun1(int z, int y, char t) { return 1; }
+	int fun2(int l[]) { return niz[1]; }
+
+	int main() {
+	
+		x = 1;
+		b = 'c';
+		
+		niz = new int[3];
+		niz[1] = 1;
+		
+		x = 2 + 3*niz[0] + 1*8;
+		niz[0] = 2;
+		
+		fun1(x, x, b);
+		fun1(niz[1], x, b);
+		fun1(1+2*3, niz[0]*4 + 1,b );
+		
+		fun2(niz);
+		
+		x++;
+		niz[1]++;
+		
+		print(x);
+		print(2*niz[0]);
+		
+		//read(niz[1]);
+	
+		return 1;
+	}
+
+
+
+}
